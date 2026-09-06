@@ -1,0 +1,90 @@
+{
+  "notify": {
+    "console": true,
+    "ntfy": {
+      "enabled": false,
+      "server": "https://ntfy.sh",
+      "topic": "cardwatch-CHANGE-ME"
+    },
+    "telegram": {
+      "enabled": false,
+      "botToken": "",
+      "chatId": ""
+    }
+  },
+  "filter": {
+    "excludeKeywords": [
+      "sleeve",
+      "binder",
+      "album",
+      "playmat",
+      "play mat",
+      "deck box",
+      "portfolio",
+      "toploader",
+      "top loader",
+      "card protector",
+      "carry case",
+      "storage box",
+      "duvet",
+      "pyjama",
+      "t-shirt",
+      "hoodie",
+      "sock",
+      "slipper",
+      "backpack",
+      "lunch",
+      "panini press",
+      "jumper",
+      "sweatshirt",
+      "outfit",
+      "knitted"
+    ],
+    "minPrice": 0,
+    "maxPrice": 0
+  },
+  "priceDropPct": 10,
+  "adapters": {
+    "asda-george": {},
+    "topps": {}
+  },
+  "targets": [
+    {
+      "id": "asda-pokemon",
+      "adapter": "asda-george",
+      "label": "Asda — Pokémon cards",
+      "queries": ["pokemon cards", "pokemon tcg", "pokemon booster"],
+      "requireAny": ["pokemon"],
+      "requireTypeAny": ["card", "trading", "tcg", "trumps"]
+    },
+    {
+      "id": "asda-sports",
+      "adapter": "asda-george",
+      "label": "Asda — sports cards",
+      "queries": ["topps", "panini cards", "match attax", "football cards"],
+      "requireAny": ["topps", "panini", "match attax", "football", "premier league", "f1"],
+      "requireTypeAny": ["card", "trading", "tcg", "trumps"]
+    },
+    {
+      "id": "topps-now",
+      "adapter": "topps",
+      "mode": "now",
+      "label": "Topps NOW — new releases"
+    },
+    {
+      "id": "topps-catalog",
+      "adapter": "topps",
+      "mode": "collections",
+      "label": "Topps — main catalog",
+      "collections": [
+        "premier-league",
+        "formula-1-turbo-attax",
+        "hobby",
+        "mlb",
+        "nba",
+        "star-wars",
+        "marvel"
+      ]
+    }
+  ]
+}

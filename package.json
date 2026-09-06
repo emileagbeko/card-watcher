@@ -1,0 +1,18 @@
+{
+  "name": "card-watcher",
+  "version": "1.0.0",
+  "description": "Watches retail sites for trading card restocks, new products and price drops",
+  "main": "watcher.js",
+  "scripts": {
+    "start": "node watcher.js",
+    "loop": "node watcher.js --loop 10",
+    "test": "node tests/diff.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "playwright": "^1.62.1"
+  }
+}

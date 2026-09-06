@@ -1,0 +1,313 @@
+{
+  "items": {
+    "060114664": {
+      "name": "Pokémon TCG: SV 6.5 Shrouded Fable Triple Pack",
+      "price": 14,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.593Z",
+      "lastSeen": "2026-09-06T12:30:43.373Z"
+    },
+    "060113392": {
+      "name": "Pokemon TCG: Prismatic Evol Tech Sticker Leafeon",
+      "price": 16,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060113062": {
+      "name": "Pokemon TCG: Prismatic Evol Tech Sticker Glaceon",
+      "price": 16,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060112702": {
+      "name": "Pokemon TCG: Prismatic Evol Tech Sticker Sylveon",
+      "price": 16,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060113001": {
+      "name": "Pokemon TCG: Grafaiai EX Box",
+      "price": 22,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060114640": {
+      "name": "Pokemon TCG: Prismatic Evolutions Mini Tin Vaporeon",
+      "price": 10,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060114691": {
+      "name": "Pokemon TCG: Prismatic Evolutions Mini Tin Umbreon",
+      "price": 10,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060114308": {
+      "name": "Pokémon TCG: SV 6.5 Shrouded Fable Illustrated Rare",
+      "price": 22,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060113172": {
+      "name": "Pokemon TCG: Prismatic Evolutions Mini Tin Glaceon",
+      "price": 10,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060112959": {
+      "name": "Pokémon TCG: SV6.5 Shrouded Fable Elite Trainer Box",
+      "price": 50,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049881": {
+      "name": "Pokemon TCG: Scarlet & Violet 1 3-Pack Booster Display - styles may vary",
+      "price": 14,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049907": {
+      "name": "Pokémon TCG: Hisuian Zoroark VSTAR Premium Collection",
+      "price": 38,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049888": {
+      "name": "Pokemon TCG: Scarlet & Violet 3 Obsidian Flames Elite Trainer Box",
+      "price": 50,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049901": {
+      "name": "Pokémon TCG: Sword & Shield 12.5 Crown Zenith Special Art 7 Inch Tin Galarian Moltres",
+      "price": 25,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-08-17T21:38:33.594Z"
+    },
+    "060049889": {
+      "name": "Pokémon TCG: Scarlet & Violet 4 - Paradox Rift - Elite Trainer Box - styles may vary",
+      "price": 50,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049885": {
+      "name": "Pokemon TCG: Scarlet & Violet 5 - Temporal Forces - 3-Pack - styles may vary",
+      "price": 14,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049884": {
+      "name": "Pokemon TCG: Scarlet & Violet 4 - Paradox Rift - 3-Pack Display - styles may vary",
+      "price": 14,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049903": {
+      "name": "Pokemon TCG: Tornadus-GX or Thundurus-GX Box",
+      "price": 11,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049898": {
+      "name": "Pokémon TCG: Sword & Shield 12.5 Crown Zenith special Art Tin Galarian Moltres",
+      "price": 22,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049896": {
+      "name": "Pokémon TCG: Sword & Shield 12.5 Crown Zenith special Art Tin Galarian Articuno",
+      "price": 22,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049891": {
+      "name": "Pokémon TCG: Roaring Moon - Iron Valiant ex Box - styles may vary",
+      "price": 22,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049890": {
+      "name": "Pokémon TCG: Scarlet & Violet 5 - Temporal Forces - Elite Trainer Box: Walking Wake and Iron Leaves - styles may vary",
+      "price": 50,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049887": {
+      "name": "Pokemon TCG: Scarlet & Violet 2 Paldea Evolved Elite Trainer Box",
+      "price": 50,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049886": {
+      "name": "Pokemon TCG: Scarlet & Violet 1 Elite Trainer Box - styles may vary",
+      "price": 50,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049883": {
+      "name": "Pokemon TCG: Scarlet & Violet 3 Obsidian Flames 3-Pack Display - styles may vary",
+      "price": 14,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060049882": {
+      "name": "Pokemon TCG: Scarlet & Violet 2 Paldea Evolved 3-Pack Booster Display - styles may vary",
+      "price": 14,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "051327865": {
+      "name": "My Favourite Pokemon XXL 100 piece Jigsaw Puzzle",
+      "price": 9,
+      "inStock": false,
+      "firstSeen": "2026-08-17T21:38:33.594Z",
+      "lastSeen": "2026-09-06T12:30:43.375Z"
+    },
+    "060202405": {
+      "name": "Pokemon TCG: Lumiose City - Mini Tins - Gallade Goomy",
+      "price": 10.98,
+      "inStock": true,
+      "firstSeen": "2026-08-18T08:31:37.173Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060202992": {
+      "name": "Pokemon TCG: ME Pitch Black - Elite Trainer Box",
+      "price": 49.98,
+      "inStock": true,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060202354": {
+      "name": "Pokemon TCG: Lumiose City - Mini Tins - Salamence Litleo",
+      "price": 10.98,
+      "inStock": true,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060201467": {
+      "name": "Pokemon TCG: Mega Moonlit Tins - Mega Clefable ex",
+      "price": 21.98,
+      "inStock": true,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060200712": {
+      "name": "Pokemon TCG: Lumiose City - Mini Tins - Meganium Meowstic",
+      "price": 10.98,
+      "inStock": true,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060199462": {
+      "name": "Pokemon TCG: Mega Moonlit Tins - Mega Gengar ex",
+      "price": 21.98,
+      "inStock": true,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060198475": {
+      "name": "Pokemon TCG: Lumiose City - Mini Tins - Emboar Inkay",
+      "price": 10.98,
+      "inStock": true,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060198409": {
+      "name": "Pokemon TCG: Lumiose City - Mini Tins - Feraligatr Budew",
+      "price": 10.98,
+      "inStock": true,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060190392": {
+      "name": "Pokemon TCG: First Partner Illustration Collection",
+      "price": 15.98,
+      "inStock": true,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060068385": {
+      "name": "Pokemon TCG: Battle Academy (2024)",
+      "price": 29.98,
+      "inStock": true,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060198322": {
+      "name": "Pokemon TCG: Mega Greninja ex Premium Collection",
+      "price": 39.98,
+      "inStock": false,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060200025": {
+      "name": "Pokemon TCG: Mega Evolution Chaos Rising - Elite Trainer Box",
+      "price": 49.98,
+      "inStock": false,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060189844": {
+      "name": "Pokemon TCG Ascended Heroes Poster Mega Gardevoir",
+      "price": 49.98,
+      "inStock": false,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060188569": {
+      "name": "Pokemon TCG: ME 2.5 Ascended Heroes Booster Bundle",
+      "price": 24.97,
+      "inStock": false,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060187743": {
+      "name": "Pokemon TCG Ascended Heroes Poster Mega Lucario",
+      "price": 49.98,
+      "inStock": false,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060173700": {
+      "name": "Pokémon TCG: Mega Evolution Ascended Heroes - Mini Tins – Pikachu & Tepig",
+      "price": 10.98,
+      "inStock": false,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    },
+    "060147182": {
+      "name": "Pokemon TCG: Team Rocket Tin - Nidoking ex",
+      "price": 21.98,
+      "inStock": false,
+      "firstSeen": "2026-08-18T08:31:37.178Z",
+      "lastSeen": "2026-08-18T08:31:37.178Z"
+    }
+  },
+  "lastRun": "2026-09-06T12:30:43.375Z"
+}
