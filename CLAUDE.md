@@ -12,7 +12,16 @@ Read README.md for usage and architecture. Quick orientation:
 - `lib/` — state (state.json), rules filter, notifiers (console/ntfy/Telegram)
 - `node watcher.js` runs once; `--baseline` re-seeds silently; `tests/diff.test.js`
 
-## Status (2026-08-20)
+## Status (2026-09-06)
+
+- **Hosted split (new).** Public repo github.com/emileagbeko/card-watcher. GitHub
+  Actions runs the light targets every 15 min and deploys the status page to
+  https://emileagbeko.github.io/card-watcher/ (built by `tools/build-page.js`).
+  The Mac runs `topps-catalog` hourly via cron → `tools/run-local.sh` (headed
+  Chrome + residential IP; Actions datacenter IPs can't pass Cloudflare). State
+  is per-target files in `state/targets/` so the two halves never conflict;
+  alert history in `state/alerts/*.jsonl` feeds the page. Notify secrets go in
+  Actions secrets (NTFY_TOPIC / TELEGRAM_*), read via env in `loadConfig`.
 
 - **Asda adapter: done.** Queries George's public Algolia search index directly
   (same API their storefront uses; key in config.json, re-extract with
@@ -36,7 +45,8 @@ Read README.md for usage and architecture. Quick orientation:
 - **Pokémon Center adapter: not started.** Hardest; monitor-only restock pings.
 - **Notifications: wired but disabled** — waiting on the user to pick ntfy topic
   or Telegram credentials. `node watcher.js --test-notify` to verify a channel.
-- **No cron installed yet.** Example line in README (macOS must be awake).
+- **Cron installed 2026-09-06**: hourly `run-local.sh` (topps-catalog only; the
+  rest runs in Actions). Mac must be awake for the catalog half.
 - Ideas parked: uk.topps.com release-calendar page as an advance-warning source;
-  PWA frontend on Vercel as v2 (Vercel hobby cron is daily-only — schedule would
-  need GitHub Actions or Supabase cron).
+  PWA frontend on Vercel as v2 (superseded for now by the GitHub Pages status
+  page).
