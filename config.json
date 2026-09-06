@@ -46,7 +46,8 @@
   "priceDropPct": 10,
   "adapters": {
     "asda-george": {},
-    "topps": {}
+    "topps": {},
+    "panini": {}
   },
   "targets": [
     {
@@ -64,6 +65,25 @@
       "queries": ["topps", "panini cards", "match attax", "football cards"],
       "requireAny": ["topps", "panini", "match attax", "football", "premier league", "f1"],
       "requireTypeAny": ["card", "trading", "tcg", "trumps"]
+    },
+    {
+      "id": "panini-football",
+      "adapter": "panini",
+      "label": "Panini — football",
+      "categories": [
+        "stickers-and-trading-cards/men-s-football",
+        "stickers-and-trading-cards/women-s-football"
+      ]
+    },
+    {
+      "id": "panini-hobby",
+      "adapter": "panini",
+      "label": "Panini — hobby & sport",
+      "categories": [
+        "stickers-and-trading-cards/hobby",
+        "stickers-and-trading-cards/sport",
+        "stickers-and-trading-cards/panini-ballers"
+      ]
     },
     {
       "id": "topps-now",

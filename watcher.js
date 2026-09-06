@@ -18,6 +18,7 @@ const { notify } = require('./lib/notify');
 const ADAPTERS = {
   'asda-george': require('./adapters/asda-george'),
   topps: require('./adapters/topps'),
+  panini: require('./adapters/panini'),
 };
 
 const CONFIG_FILE = path.join(__dirname, 'config.json');

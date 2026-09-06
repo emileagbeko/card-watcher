@@ -111,10 +111,23 @@ Empty UK collections (nba, star-wars, marvel) are normal — those lines exist o
 NOW cards. If Topps ever stocks them, the watcher announces it. Their site also has a
 release-calendar page — a possible future source for advance drop warnings.
 
+### panini (done)
+panini.co.uk is server-rendered Magento, so this is plain HTTPS + parsing the product
+grid — no browser, runs in the cloud half. Each target lists category paths (e.g.
+`stickers-and-trading-cards/men-s-football`); pages are paginated and capped at 4 per
+category. Implementation note: it uses `node:https` with a raised header limit because
+Panini's response headers overflow Node fetch's 16KB default. Caveat: the grid appears
+to hide out-of-stock products, so this watch is strongest for **new products** — a
+vanished product simply stops updating, and restock alerts only fire if Panini shows
+sold-out tiles.
+
 ### Planned
 - **Amazon** — via Keepa API (paid, reliable) or polite page checks; LLM verification
-  matters most here to catch third-party scalper listings.
-- **Pokémon Center** — monitor-only restock pings; heavy bot protection, best-effort.
+  matters most here to catch third-party scalper listings. Note Amazon sells hot
+  Pokémon TCG via invite-request now, which softens the need for fast alerts.
+- **Pokémon Center** — ruled out for now (checked 2026-09-06): Imperva returns a hard
+  403 even to real headed Chrome driven by Playwright. Community restock trackers are
+  the practical option there.
 
 ## Ground rules
 

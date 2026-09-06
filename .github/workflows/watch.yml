@@ -41,7 +41,7 @@ jobs:
 
       - name: Run light watches
         if: github.event_name != 'push'
-        run: node watcher.js --targets asda-pokemon,asda-sports,topps-now
+        run: node watcher.js --targets asda-pokemon,asda-sports,topps-now,panini-football,panini-hobby
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

@@ -40,9 +40,18 @@ Read README.md for usage and architecture. Quick orientation:
   retried once. Empty UK collections (nba/star-wars/marvel) are genuinely empty,
   not a bug. The headed Chrome shows in the Dock during runs; the user closing it
   aborts the check ("browser has been closed" errors) — README warns about this.
+- **Panini adapter: done (2026-09-06).** panini.co.uk, Magento, server-rendered —
+  plain HTTPS grid parsing, cloud-friendly. Uses node:https with maxHeaderSize 64KB
+  (their headers overflow undici fetch's 16KB cap → UND_ERR_HEADERS_OVERFLOW) and
+  carries cookies across the occasional store-selection 302. GraphQL is WAF-403'd;
+  the HTML isn't. Grid seems to hide OOS items → NEW detection strong, restock weak.
+  Targets: panini-football, panini-hobby (category path lists in config).
 - **Amazon adapter: not started.** Decision pending: Keepa API (~£15/mo, reliable)
   vs polite scraping. LLM alert verification matters most here (scalper listings).
-- **Pokémon Center adapter: not started.** Hardest; monitor-only restock pings.
+  Amazon UK sells hot Pokémon TCG via invite-request (24h purchase window).
+- **Pokémon Center adapter: ruled out (2026-09-06).** Imperva hard-403s even real
+  headed Chrome under Playwright (it detects CDP, unlike Cloudflare which passed).
+  Don't retry without a genuinely new approach; point the user at community trackers.
 - **Notifications: wired but disabled** — waiting on the user to pick ntfy topic
   or Telegram credentials. `node watcher.js --test-notify` to verify a channel.
 - **Cron installed 2026-09-06**: hourly `run-local.sh` (topps-catalog only; the
