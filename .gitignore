@@ -1,5 +1,6 @@
 node_modules/
 site/
+.chrome-profile/
 watcher.log
 state.json
 state.json.pre-split-backup

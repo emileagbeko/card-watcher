@@ -49,9 +49,11 @@ Read README.md for usage and architecture. Quick orientation:
 - **Amazon adapter: not started.** Decision pending: Keepa API (~£15/mo, reliable)
   vs polite scraping. LLM alert verification matters most here (scalper listings).
   Amazon UK sells hot Pokémon TCG via invite-request (24h purchase window).
-- **Pokémon Center adapter: ruled out (2026-09-06).** Imperva hard-403s even real
-  headed Chrome under Playwright (it detects CDP, unlike Cloudflare which passed).
-  Don't retry without a genuinely new approach; point the user at community trackers.
+- **Pokémon Center adapter: ruled out (2026-09-06, two experiments).** Imperva
+  hard-403s headed Chrome under Playwright (it detects CDP, unlike Cloudflare which
+  passed); a second visible-window test got HTTP 200 but a fully blank document —
+  no content, no solvable challenge. Don't retry without a genuinely new approach;
+  point the user at community trackers (a tracker-feed adapter is a parked idea).
 - **Notifications: wired but disabled** — waiting on the user to pick ntfy topic
   or Telegram credentials. `node watcher.js --test-notify` to verify a channel.
 - **Cron installed 2026-09-06**: hourly `run-local.sh` (topps-catalog only; the

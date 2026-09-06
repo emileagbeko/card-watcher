@@ -77,20 +77,34 @@ function extractTiles() {
   return [...byHref.values()];
 }
 
+const CHALLENGE_TITLE = /just a moment|attention required/i;
+
 async function fetchCollections(target, cfg) {
   const { chromium } = require('playwright');
+  const path = require('path');
   // Since ~Sep 2026 Cloudflare blocks every headless flavour here (bundled
   // Chromium gets an interactive Turnstile, Chrome's own headless a flat 403),
   // but real *headed* Chrome passes the silent JS check. So: installed Google
   // Chrome, headed, window parked offscreen. No UA override — a spoofed UA on
   // real Chrome contradicts its brand hints and re-trips the detection.
-  let browser;
+  //
+  // The profile is PERSISTENT (.chrome-profile/, gitignored): Cloudflare's
+  // clearance cookie sticks to it, so every run looks like the same returning
+  // browser instead of a fresh anonymous one — fresh contexts on every run is
+  // what got the IP challenge-flagged. If a run still logs a challenge, run
+  // `node tools/topps-verify.js` once and click the checkbox.
+  let context;
   try {
-    browser = await chromium.launch({
-      channel: cfg.channel,
-      headless: false,
-      args: ['--window-position=-2400,-2400'],
-    });
+    context = await chromium.launchPersistentContext(
+      path.join(__dirname, '..', '.chrome-profile'),
+      {
+        channel: cfg.channel,
+        headless: false,
+        viewport: null,
+        locale: 'en-GB',
+        args: ['--window-position=-2400,-2400'],
+      }
+    );
   } catch (e) {
     throw new Error(
       `couldn't launch "${cfg.channel}" (${e.message.split('\n')[0]}) — collections mode ` +
@@ -101,14 +115,11 @@ async function fetchCollections(target, cfg) {
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   try {
     for (const slug of target.collections || []) {
-      // Fresh context per collection: rapid same-session page hops trip the
-      // site's bot heuristics and later collections silently render empty.
-      // Renders also flake empty intermittently, so an empty result gets one
-      // retry before we accept it (a truly empty collection just costs one
-      // extra page load).
+      // Renders flake empty intermittently, so an empty result gets one retry
+      // before we accept it (a truly empty collection just costs one extra
+      // page load).
       let tiles = [];
       for (let attempt = 1; attempt <= 2; attempt++) {
-        const context = await browser.newContext({ locale: 'en-GB' });
         const page = await context.newPage();
         try {
           await page.goto(`${cfg.site}/collections/${slug}`, {
@@ -119,6 +130,18 @@ async function fetchCollections(target, cfg) {
           await page
             .waitForSelector('a[href*="/products/"]', { timeout: 20000 })
             .catch(() => {});
+          if (CHALLENGE_TITLE.test(await page.title())) {
+            // interactive challenge: it won't clear on its own, and every
+            // collection would hit it — bail out with instructions instead
+            // of hammering Cloudflare further
+            throw Object.assign(
+              new Error(
+                'Cloudflare challenge page — run `node tools/topps-verify.js`, click the ' +
+                  '"Verify you are human" checkbox in the window it opens, then rerun'
+              ),
+              { challenge: true }
+            );
+          }
           // nudge lazy-loaded tiles into rendering
           await page.mouse.wheel(0, 2500).catch(() => {});
           await page.waitForTimeout(1500);
@@ -130,12 +153,16 @@ async function fetchCollections(target, cfg) {
             tiles = await page.evaluate(extractTiles);
           }
         } catch (e) {
+          if (e.challenge) {
+            await page.close().catch(() => {});
+            throw e; // every collection would hit it — stop the whole target
+          }
           const msg = page.isClosed()
             ? 'Chrome window was closed mid-check — leave the watcher\'s Chrome alone, it quits by itself'
             : e.message;
           console.error(`  [topps] collection "${slug}" attempt ${attempt} failed: ${msg}`);
         } finally {
-          await context.close();
+          await page.close().catch(() => {});
         }
         if (tiles.length > 0) break;
         await sleep(4000);
@@ -158,7 +185,7 @@ async function fetchCollections(target, cfg) {
       await sleep(3000);
     }
   } finally {
-    await browser.close();
+    await context.close();
   }
   return [...items.values()];
 }

@@ -125,9 +125,11 @@ sold-out tiles.
 - **Amazon** — via Keepa API (paid, reliable) or polite page checks; LLM verification
   matters most here to catch third-party scalper listings. Note Amazon sells hot
   Pokémon TCG via invite-request now, which softens the need for fast alerts.
-- **Pokémon Center** — ruled out for now (checked 2026-09-06): Imperva returns a hard
-  403 even to real headed Chrome driven by Playwright. Community restock trackers are
-  the practical option there.
+- **Pokémon Center** — ruled out (two experiments, 2026-09-06): Imperva returned a
+  hard 403 to headed Chrome under Playwright, and on a second attempt served HTTP 200
+  with a completely blank document — no content and no human-solvable challenge, even
+  in a visible window. Don't retry without a genuinely new approach. Parked idea: an
+  adapter over a community restock-tracker feed instead of the store itself.
 
 ## Ground rules
 
