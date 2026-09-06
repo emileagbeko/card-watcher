@@ -56,8 +56,14 @@ Read README.md for usage and architecture. Quick orientation:
   point the user at community trackers (a tracker-feed adapter is a parked idea).
 - **Notifications: wired but disabled** — waiting on the user to pick ntfy topic
   or Telegram credentials. `node watcher.js --test-notify` to verify a channel.
-- **Cron installed 2026-09-06**: hourly `run-local.sh` (topps-catalog only; the
-  rest runs in Actions). Mac must be awake for the catalog half.
+- **Cron 2026-09-06**: `run-local.sh` every 4h (topps-catalog only; rest in
+  Actions). Was hourly, but hourly×10 collections + heavy manual testing escalated
+  Cloudflare from the solvable Turnstile checkbox to a hard "Attention Required!"
+  403 IP-reputation block — which ignores the valid cf_clearance cookie and is made
+  worse by VPNs (datacenter IP reputation). Network trace confirmed the block is at
+  the edge (no app/API/RSC traffic reaches origin, so there's no bypass endpoint to
+  find). Recovery: stop requesting, wait hours on non-VPN residential, then
+  topps-verify.js. Keep catalog cadence to hours, never minutes.
 - Ideas parked: uk.topps.com release-calendar page as an advance-warning source;
   PWA frontend on Vercel as v2 (superseded for now by the GitHub Pages status
   page).

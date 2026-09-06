@@ -56,13 +56,22 @@ The watcher runs in two halves so the Mac doesn't have to stay awake:
 
 ```sh
 crontab -e
-# once an hour while the Mac is awake (Chrome appears in the Dock briefly — leave it):
-0 * * * * cd $HOME/Documents/card-watcher && ./tools/run-local.sh >> watcher.log 2>&1
+# every 4 hours while the Mac is awake (Chrome appears in the Dock briefly — leave it):
+17 */4 * * * cd $HOME/Documents/card-watcher && ./tools/run-local.sh >> watcher.log 2>&1
 ```
 
 State is one file per target (`state/targets/<id>.json`), so the two halves never
 write the same files and their commits merge cleanly. Recent alerts land in
 `state/alerts/<id>.jsonl` and feed the status page's "recent finds" table.
+
+**Don't over-poll the Topps catalog.** It's the one browser-driven target, and
+Cloudflare tracks how often your IP requests it. Keep the catalog cron at a few hours
+apart, never minutes — hammering it escalates a solvable "Verify you are human"
+checkbox into a hard "Attention Required!" IP block (`403`) that a VPN makes *worse*
+(datacenter IPs have poor reputation). If you hit the hard block, the only fix is to
+stop requesting it and wait a few hours on a normal (non-VPN) home connection for the
+reputation to cool off; then `node tools/topps-verify.js` for a fresh clearance. The
+plain-HTTP targets (Asda, Panini, Topps NOW) aren't affected.
 
 ## Targets (`config.json → targets`)
 
