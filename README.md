@@ -52,12 +52,14 @@ The watcher runs in two halves so the Mac doesn't have to stay awake:
   `TELEGRAM_CHAT_ID`) — never in the repo.
 - **This Mac** runs the browser-based `topps-catalog` target via `tools/run-local.sh`
   (headed Chrome + a residential IP are what get past Cloudflare — a datacenter
-  runner can't). It pushes state, which triggers a page rebuild:
+  runner can't). Sealed boxes don't sell out in minutes, so it runs just twice a day
+  to stay well under Cloudflare's radar; the fast-moving singles are covered by Topps
+  NOW and Panini on the cloud side. It pushes state, which triggers a page rebuild:
 
 ```sh
 crontab -e
-# every 4 hours while the Mac is awake (Chrome appears in the Dock briefly — leave it):
-17 */4 * * * cd $HOME/Documents/card-watcher && ./tools/run-local.sh >> watcher.log 2>&1
+# twice a day while the Mac is awake (Chrome appears in the Dock briefly — leave it):
+17 8,20 * * * cd $HOME/Documents/card-watcher && ./tools/run-local.sh >> watcher.log 2>&1
 ```
 
 State is one file per target (`state/targets/<id>.json`), so the two halves never

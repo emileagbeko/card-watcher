@@ -56,8 +56,8 @@ Read README.md for usage and architecture. Quick orientation:
   point the user at community trackers (a tracker-feed adapter is a parked idea).
 - **Notifications: wired but disabled** — waiting on the user to pick ntfy topic
   or Telegram credentials. `node watcher.js --test-notify` to verify a channel.
-- **Cron 2026-09-06**: `run-local.sh` every 4h (topps-catalog only; rest in
-  Actions). Was hourly, but hourly×10 collections + heavy manual testing escalated
+- **Cron 2026-09-06**: `run-local.sh` twice daily at 08:17/20:17 (topps-catalog
+  only; rest in Actions). Was hourly, but hourly×10 collections + heavy manual testing escalated
   Cloudflare from the solvable Turnstile checkbox to a hard "Attention Required!"
   403 IP-reputation block — which ignores the valid cf_clearance cookie and is made
   worse by VPNs (datacenter IP reputation). Network trace confirmed the block is at
