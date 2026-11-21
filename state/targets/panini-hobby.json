@@ -593,42 +593,42 @@
       "price": 50,
       "inStock": true,
       "firstSeen": "2026-11-04T16:22:17.814Z",
-      "lastSeen": "2026-11-20T22:38:59.109Z"
+      "lastSeen": "2026-11-21T18:11:57.473Z"
     },
     "005580KBUK9_UK02": {
       "name": "EFL 2026/27 Official Sticker Collection - Box of 9 Packets",
       "price": 8.99,
       "inStock": true,
       "firstSeen": "2026-11-04T16:22:17.814Z",
-      "lastSeen": "2026-11-20T22:38:59.109Z"
+      "lastSeen": "2026-11-21T18:11:57.473Z"
     },
     "BUNDLE005580SPBOX50_UK02": {
       "name": "EFL 2026/27 Official Sticker Collection - Starter Pack and 50 Packets",
       "price": 55.99,
       "inStock": true,
       "firstSeen": "2026-11-04T16:22:17.814Z",
-      "lastSeen": "2026-11-20T22:38:59.109Z"
+      "lastSeen": "2026-11-21T18:11:57.473Z"
     },
     "BUNDLE005580SPKBUK9_UK02": {
       "name": "EFL 2026/27 Official Sticker Collection - Starter Pack and 9 Packets",
       "price": 14.98,
       "inStock": true,
       "firstSeen": "2026-11-04T16:22:17.814Z",
-      "lastSeen": "2026-11-20T22:38:59.109Z"
+      "lastSeen": "2026-11-21T18:11:57.473Z"
     },
     "005580BOX100O_UK02": {
       "name": "EFL 2026/27 Official Sticker Collection - EXCLUSIVE Box of 100 Packets",
       "price": 100,
       "inStock": true,
       "firstSeen": "2026-11-04T16:22:17.814Z",
-      "lastSeen": "2026-11-20T22:38:59.109Z"
+      "lastSeen": "2026-11-21T18:11:57.473Z"
     },
     "BUNDLE005580SBOX100O_UK02": {
       "name": "EFL 2026/27 Official Sticker Collection - Starter Pack and EXCLUSIVE Box of 100 Packets",
       "price": 105.99,
       "inStock": true,
       "firstSeen": "2026-11-04T16:22:17.814Z",
-      "lastSeen": "2026-11-20T22:38:59.109Z"
+      "lastSeen": "2026-11-21T18:11:57.473Z"
     },
     "BUNDLE005570SPBLGB1_UK02": {
       "name": "PDC Top Flight Official Sticker Collection 2027 - Starter Pack and Mega Pack",
@@ -649,42 +649,42 @@
       "price": 50,
       "inStock": true,
       "firstSeen": "2026-11-13T02:56:27.900Z",
-      "lastSeen": "2026-11-20T22:38:59.109Z"
+      "lastSeen": "2026-11-21T18:11:57.473Z"
     },
     "005585KBUK9_UK02": {
       "name": "Barclays Women’s Super League Official Sticker Collection 2027 - Box of 9 Packets",
       "price": 8.99,
       "inStock": true,
       "firstSeen": "2026-11-13T02:56:27.900Z",
-      "lastSeen": "2026-11-20T22:38:59.109Z"
+      "lastSeen": "2026-11-21T18:11:57.473Z"
     },
     "BUNDLE005585SPBOX50_UK02": {
       "name": "Barclays Women’s Super League Official Sticker Collection 2027 - Starter Pack and 50 Packets",
       "price": 55.99,
       "inStock": true,
       "firstSeen": "2026-11-13T02:56:27.900Z",
-      "lastSeen": "2026-11-20T22:38:59.109Z"
+      "lastSeen": "2026-11-21T18:11:57.473Z"
     },
     "BUNDLE005585SPKBUK9_UK02": {
       "name": "Barclays Women’s Super League Official Sticker Collection 2027 - Starter Pack and 9 Packets",
       "price": 14.98,
       "inStock": true,
       "firstSeen": "2026-11-13T02:56:27.900Z",
-      "lastSeen": "2026-11-20T22:38:59.109Z"
+      "lastSeen": "2026-11-21T18:11:57.473Z"
     },
     "BUNDLE005580SB100K9T_UK02": {
       "name": "EFL 2026/27 Official Sticker Collection - Mega bundle - SPECIAL ONLINE BUNDLE PRICE!",
       "price": 124.97,
       "inStock": true,
       "firstSeen": "2026-11-18T19:11:40.941Z",
-      "lastSeen": "2026-11-20T22:38:59.109Z"
+      "lastSeen": "2026-11-21T18:11:57.473Z"
     },
     "BUNDLE005580SPTINPUK_UK02": {
       "name": "EFL 2026/27 Official Sticker Collection - Starter Pack and Tin",
       "price": 15.98,
       "inStock": true,
       "firstSeen": "2026-11-18T19:11:40.941Z",
-      "lastSeen": "2026-11-20T22:38:59.109Z"
+      "lastSeen": "2026-11-21T18:11:57.473Z"
     },
     "005580TINPUK_UK02": {
       "name": "EFL 2026/27 Official Sticker Collection - Tin",
@@ -715,5 +715,5 @@
       "lastSeen": "2026-11-19T01:12:15.500Z"
     }
   },
-  "lastRun": "2026-11-21T11:34:47.042Z"
+  "lastRun": "2026-11-21T18:11:57.473Z"
 }
